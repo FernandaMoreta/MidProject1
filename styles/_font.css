@@ -25,3 +25,11 @@ h4 {
 ul {
     list-style: none;
 }
+
+button {
+    background-color: #072ac8;
+    color: white;
+    width: 150px;
+    height: 52px;
+
+}

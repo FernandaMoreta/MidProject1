@@ -1,0 +1,111 @@
+@import url('/styles/_colors.css');
+@import url('/styles/_font.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+nav {
+    border-bottom: 1px solid var(--light);
+}
+
+.nav-ham {
+    display: none;
+}
+
+.nav-label {
+    position: absolute;
+    cursor: pointer;
+    margin: 0 1em;
+    right: 0;
+}
+
+.nav-label svg {
+    width: 1rem;
+    fill: var(--dark);
+}
+
+.nav-label .close {
+    display: none;
+}
+
+.nav-label .close,
+.nav-label .menu {
+    margin-top: 0.3 rem;
+}
+
+.nav-list {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 1rem;
+}
+
+.nav-list li {
+    list-style-type: none;
+    display: none;
+}
+
+/* first-child indica el primer elemento del elemento padre (en este caso el primer li de la lista que es la imagen*/
+.nav-list li:first-child {
+    margin-right: auto;
+    display: block;
+}
+
+.nav-list a {
+    color: var(--dark);
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.link-nav:hover {
+    color: var(--hover);
+}
+
+.logo {
+    height: 30px;
+}
+
+.logo img {
+    height: 100€;
+}
+
+/* esta expressión se usa cuando se marcar el "checkbox" para que apararezca nuestra lista */
+#nav-ham:checked~ul.nav-list li {
+    display: block;
+
+}
+
+#nav-ham :checked~label.nav-label .close {
+    display: block;
+}
+
+#nav-ham :checked~label.nav-label .menu {
+    display: none;
+}
+
+button {
+    display: none;
+}
+
+/*Uso media query para que solo se use en mobile*/
+@media (min-width: 767px) {
+    .nav-label {
+        display: none;
+    }
+
+    .nav-list {
+        flex-direction: row;
+    }
+
+    .nav-list li {
+        display: block;
+    }
+}
