@@ -41,7 +41,6 @@ body {
 .container-image {
     width: 100vw;
     position: relative;
-    padding: 0;
 }
 
 .hero-image {
@@ -63,22 +62,125 @@ body {
 }
 
 #clients-section {
-    padding: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    overflow: scroll
+    overflow: scroll;
 }
 
 .client {
     flex: 1 0 auto;
     margin: 0 50px;
-    width: 150px;
+    width: 100px;
     height: 96px;
     align-items: center;
 }
 
 .client img {
-    width: 150px;
+    width: 100px;
     height: 96px;
+    filter: grayscale();
+}
+
+#project-section {
+    padding: 50 20;
+    font-size: medium;
+
+}
+
+#project-section h3 {
+    font-size: 2.2em;
+
+}
+
+.container-project {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    justify-content: space-around;
+
+}
+
+.elemento {
+    flex: auto;
+    margin: 0 50px;
+    width: 340px;
+    height: 444px;
+    background-color: white;
+    filter: drop-shadow(0 0 5px black);
+
+}
+
+.elemento img {
+    width: 340px;
+    height: 240px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    padding: 5 5 auto;
+}
+
+.texto p {
+    font-size: 1.5em;
+    color: var(--medium);
+}
+
+.texto a {
+    align-items: end;
+}
+
+#testimonial-section {
+    background-color: var(--dark);
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container-opinion {
+    width: 300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.container-opinion h3 {
+    font-size: 1.75em;
+    color: var(--light);
+    text-align: center;
+}
+
+.container-opinion p {
+    color: var(--yellow);
+    text-align: center;
+
+}
+
+.client-information {
+    width: 171px;
+    height: 50px;
+}
+
+.group-53 {
+    display: flex;
+    flex-direction: row;
+}
+
+.group-53 img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
