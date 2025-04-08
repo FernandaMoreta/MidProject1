@@ -59,6 +59,7 @@ nav {
 .nav-list li {
     list-style-type: none;
     display: none;
+    color: var(--medium);
 }
 
 /* first-child indica el primer elemento del elemento padre (en este caso el primer li de la lista que es la imagen*/
