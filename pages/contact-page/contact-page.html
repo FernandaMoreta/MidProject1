@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./main.css"/>
+    <link rel="stylesheet" href="../main.css"/>
     <link rel="stylesheet" href="./contact-page.css"/>
  
 </head>
@@ -12,6 +12,7 @@
     <nav>
         <input type="checkbox" name="" id="nav-ham" class="nav-ham"/>
         <label for="nav-ham"class="nav-label">
+         <!--svg sirve para dar calidad a elementos como un formato -->   
           <svg class="menu" viewBox="0 0 448 512" width="100" title="bars">
             <path
               d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
@@ -23,7 +24,7 @@
         </label> 
         <ul class="nav-list">
             <li class="logo-circle"> 
-                 <img src="./project-assets-20250305T200804Z-001/project-assets/logos/circle.svg"/>           
+                 <img src="/project-assets-20250305T200804Z-001/project-assets/logos/circle.svg"/>           
             </li>
             <li>
                 <a class= "link-nav" href="./index.html">Home</a>
@@ -34,35 +35,30 @@
             <li>
                 <a class= "link-nav" href="./pages/contact-page/contact-page.html">Services</a>       
             </li>
-
+            <li>
+             <button>Contact Us</button>   
+            </li>
         </ul>
-        <button>Contact Us</button>
     </nav>
-   <form id="contact form">
-    <p>Contact Us</p>
-      Full Name* <input type="text" placeholder="Enter your full name"><br> 
-      Email <input type="email" placeholder="Enter your email address" > Phone <input type="number" placeholder="Enter your phone number"><br> 
-      Message <input type="text" placeholder="Write your message here..."><br>
-      <input type="submit" value="Submit">
+   <form id="contact-form">
+        <h1>Contact Us</h1>
+        <div class="container-form">
+            <p>Full Name*</p>
+            <input type="text" placeholder="Enter your full name" class="field"><br> 
+            <p>Email</p>
+            <input type="email" placeholder="Enter your email address" class="field"><p>Phone</p><input type="number" placeholder="Enter your phone number" class="field"><br> 
+            <p>Message</p>
+            <input type="text" placeholder="Write your message here..." class="field"><br>
+            <input type="submit" value="Submit" class="submit">
+        </div>    
     </form>
-    <section id="CTA section">
-        <div>
-            <div>
-                <buttom>Subscribe</buttom>
-                <form></form>
-                Let us help you
-                Do you have any questions?
-            </div>
+    <footer id="footer-section">
+        <div class="container-direcction">
+            <img src="/project-assets-20250305T200804Z-001/project-assets/logos/circle.svg">
+            <p>2972 Westheimer Rd. Santa Ana,</p>
+            <p>Illinois 85486</p>  
         </div>
-    </section>
-   <footer id="footer section">
-    <div>
-        <img>logo
-        <p>2972 Westheimer Rd. Santa Ana,
-            Illinois 85486
-        </p>
-    </div>
-    <div>
+        <div class="container-list">
         <ul>
             <li>Team</li>
             <li>Press</li>
@@ -71,7 +67,7 @@
             <li>About Us</li>
             <li>Privacy</li>
         </ul>
-    </div>
-    </footer>
+        </div>
+    </footer> 
 </body>
 </html>

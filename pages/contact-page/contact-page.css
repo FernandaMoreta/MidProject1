@@ -1,0 +1,32 @@
+body {
+    background-color: var(--light);
+    width: 100vw;
+}
+
+#contact-form {
+    padding: 2rem;
+}
+
+.container-form {
+    padding-top: 2em;
+}
+
+.field {
+    width: 311px;
+    height: 40px;
+    border: none;
+    background-color: var(--medium);
+    opacity: 0.2;
+
+    &::placeholder {
+        color: black;
+    }
+}
+
+.submit {
+    width: 311px;
+    height: 40px;
+    border: none;
+    background-color: var(--primary);
+    color: white;
+}
