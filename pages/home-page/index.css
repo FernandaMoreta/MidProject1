@@ -195,21 +195,60 @@ body {
 /*SERVICIOS*/
 
 #service-section {
-    width: 100vw;
-
+    padding: 2rem;
 }
 
 .container-service {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    overflow: scroll;
-    justify-content: space-around;
-
+    flex-direction: column;
 }
 
 .service {
-    width: 50px;
-    height: 70px;
-    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    padding-top: 2rem;
+}
+
+.service-card {
+    width: 380px;
+}
+
+/*PREGUNTAS*/
+#CTA-section {
+    background-color: var(--yellow);
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+
+}
+
+.container-CTA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-CTA h3 {
+    text-align: center;
+}
+
+
+.container-CTA p {
+    color: var(--dark);
+}
+
+.form {
+    padding-top: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form input {
+    height: 52px;
 }

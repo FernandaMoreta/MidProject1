@@ -100,7 +100,24 @@ nav {
     display: none;
 }
 
-/*Uso media query para que solo se use en mobile*/
+/*PIE DE PÁGINA*/
+#footer-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.container-direcction img {
+    padding-bottom: 1em;
+}
+
+.container-direcction p {
+    font-size: 1em;
+}
+
+
+/*Uso media query para que solo se use en mobile
 @media (min-width: 600px) {
     .nav-label {
         display: none;
@@ -113,5 +130,5 @@ nav {
     .nav-list li {
         display: block;
     }
-
-}
+*/
+/**
