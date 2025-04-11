@@ -38,14 +38,13 @@ body {
 }
 
 .container-image {
-    padding-top: 2em;
+    margin-top: 2em;
     width: 100vw;
     position: relative;
 }
 
 .hero-image {
     width: 100vw;
-    padding-top: 2rem;
 }
 
 .card-1 {
@@ -69,7 +68,6 @@ body {
     flex-wrap: nowrap;
     overflow: scroll;
     padding-top: 2rem;
-
 }
 
 .client {
@@ -130,14 +128,24 @@ body {
 }
 
 /*TESTIMONIO*/
+
 #testimonial-section {
     background-color: var(--dark);
     height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
 
+}
+
+@media (max-width: 599px) {
+    .memojis-1 {
+        display: none;
+    }
+
+    .memojis-2 {
+        display: none;
+    }
 }
 
 .container-opinion {
@@ -281,4 +289,58 @@ body {
     margin-right: 10px;
     padding-left: 40px;
     border: none;
+}
+
+/*TABLET VERSIÓN*/
+
+@media (min-width: 600px) {
+    .container-image {
+        width: 570px;
+        height: 637px;
+    }
+
+    .card-1 {
+        width: 190px;
+        height: 193px;
+    }
+
+    .card-2 {
+        width: 190px;
+        height: 193px;
+    }
+
+    #testimonial-section {
+        flex-direction: column;
+        height: 500px;
+        justify-content: space-between;
+    }
+
+    .memojis-1 {
+        padding: 2em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 600px;
+    }
+
+    .container-opinion {
+        height: 350px;
+        width: 400px;
+        ;
+    }
+
+    .memojis-2 {
+        padding: 2em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 600px;
+
+    }
+
+    .emoji {
+        width: 100px;
+        width: 100px;
+    }
+
 }

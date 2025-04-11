@@ -11,17 +11,22 @@ body {
     padding-top: 2rem;
 }
 
+.container-form p {
+    padding: 1em 0 1em 0;
+}
+
 .field {
     width: 311px;
     height: 40px;
     border: none;
     background-color: rgb(107, 112, 141, 20%);
-    margin-top: 1.5em;
 
     &::placeholder {
-        color: var(--medium)
+        color: var(--medium);
+        padding: 15px;
     }
 }
+
 
 .submit {
     width: 311px;
@@ -29,5 +34,19 @@ body {
     border: none;
     background-color: var(--primary);
     color: white;
-    margin-top: 1.5em;
+    margin-top: 2em;
+}
+
+/*TABLET VERSIÓN*/
+
+@media (min-width: 600px) {
+    .field {
+        width: 430px;
+        height: 55px;
+    }
+
+    .submit {
+        width: 430px;
+        height: 55px;
+    }
 }
