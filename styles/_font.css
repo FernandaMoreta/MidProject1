@@ -14,7 +14,7 @@ ul {
 
 @media (min-width: 375px) and (max-width:768px) {
     body {
-        font-size: 10px;
+        font-size: 12px;
         color: var(--medium)
     }
 

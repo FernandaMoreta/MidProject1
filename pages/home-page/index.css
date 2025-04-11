@@ -45,17 +45,18 @@ body {
 
 .hero-image {
     width: 100vw;
+    padding-top: 2rem;
 }
 
 .card-1 {
-    width: 180px;
+    width: 140px;
     position: absolute;
     left: 0;
     top: 0;
 }
 
 .card-2 {
-    width: 180px;
+    width: 140px;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -112,7 +113,6 @@ body {
     max-width: 340px;
     height: 444px;
     background-color: white;
-    filter: drop-shadow(0 0 5px black);
 }
 
 .element img {
@@ -213,14 +213,15 @@ body {
 }
 
 .service-card {
+    margin: 1em;
     min-width: 340px;
     max-width: 340px;
     height: 380px;
-    background-color: white;
     display: flex;
     flex-direction: column;
-    padding: 2em 2em;
     justify-content: space-around;
+    background-color: white;
+    padding: 1em;
 }
 
 .icon {
@@ -274,4 +275,10 @@ body {
 
 .form input {
     height: 52px;
+    background-image: url(/project-assets-20250305T200804Z-001/project-assets/newsletter/icon/mail.svg);
+    background-repeat: no-repeat;
+    background-position: 5px;
+    margin-right: 10px;
+    padding-left: 40px;
+    border: none;
 }

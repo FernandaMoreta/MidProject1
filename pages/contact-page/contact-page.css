@@ -8,18 +8,18 @@ body {
 }
 
 .container-form {
-    padding-top: 2em;
+    padding-top: 2rem;
 }
 
 .field {
     width: 311px;
     height: 40px;
     border: none;
-    background-color: var(--medium);
-    opacity: 0.2;
+    background-color: rgb(107, 112, 141, 20%);
+    margin-top: 1.5em;
 
     &::placeholder {
-        color: black;
+        color: var(--medium)
     }
 }
 
@@ -29,4 +29,5 @@ body {
     border: none;
     background-color: var(--primary);
     color: white;
+    margin-top: 1.5em;
 }

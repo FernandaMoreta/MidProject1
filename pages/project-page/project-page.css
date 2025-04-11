@@ -4,8 +4,11 @@ body {
 }
 
 /*SIMPLIFY*/
-.container-simplify {
+#simplify-section {
     padding: 2rem;
+}
+
+.container-simplify {
     display: flex;
     flex-direction: column;
 }
@@ -21,7 +24,7 @@ body {
 
 .container-simplify p {
     padding-top: 1.5em;
-    text-align: justify
+    text-align: start
 }
 
 /*PROYECTOS*/
@@ -45,36 +48,36 @@ body {
 }
 
 .element {
-    margin: 1em;
-    width: 300px;
+    margin: 1.5em;
+    min-width: 340px;
+    max-width: 340px;
     height: 444px;
     background-color: white;
-    filter: drop-shadow(0 0 5px black);
 }
 
 .element img {
-    width: 300px;
+    width: 340px;
     height: 240px;
 }
 
 .text {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    height: 204px;
-    padding: 2em;
+    justify-content: space-between;
+    height: 200px;
+    padding: 2.5em;
 
 }
 
+/*PREGUNTAS*/
 #CTA-section {
+    padding: 2rem;
     background-color: var(--yellow);
     height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
-
 }
 
 .container-CTA {
@@ -101,4 +104,10 @@ body {
 
 .form input {
     height: 52px;
+    background-image: url(/project-assets-20250305T200804Z-001/project-assets/newsletter/icon/mail.svg);
+    background-repeat: no-repeat;
+    background-position: 5px;
+    margin-right: 10px;
+    padding-left: 40px;
+    border: none;
 }
