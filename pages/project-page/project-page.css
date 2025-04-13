@@ -5,34 +5,46 @@ body {
 
 /*SIMPLIFY*/
 #simplify-section {
-    padding: 2rem;
+    margin-top: 4rem;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
 }
 
 .container-simplify {
+    max-width: 1100px;
+    min-height: 934px;
     display: flex;
     flex-direction: column;
 }
 
 .info {
+    padding: 1em 0 4em 0;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+}
+
+.date {
+    color: black;
 }
 
 .container-simplify img {
-    padding-top: 2em;
+    max-height: 444px;
 }
 
 .container-simplify p {
     padding-top: 1.5em;
-    text-align: start
 }
 
 /*PROYECTOS*/
 #project-section {
+    margin-top: 4rem;
     padding: 2rem;
 }
 
 .container-project {
+    max-width: 1100px;
     display: flex;
     flex-direction: column;
 
@@ -48,11 +60,11 @@ body {
 }
 
 .element {
-    margin: 1.5em;
     min-width: 340px;
     max-width: 340px;
     height: 444px;
     background-color: white;
+    margin: 0 4em 0 0;
 }
 
 .element img {
@@ -71,25 +83,29 @@ body {
 
 /*PREGUNTAS*/
 #CTA-section {
+    margin-top: 4rem;
     padding: 2rem;
     background-color: var(--yellow);
-    height: 350px;
+    max-width: 1320px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container-CTA {
+    max-width: 1100px;
+    height: 227px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.container-CTA {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .container-CTA h3 {
     text-align: center;
 }
-
 
 .container-CTA p {
     color: var(--dark);
@@ -103,11 +119,16 @@ body {
 }
 
 .form input {
-    height: 52px;
+    max-width: 393px;
+    max-height: 80px;
     background-image: url(/project-assets-20250305T200804Z-001/project-assets/newsletter/icon/mail.svg);
     background-repeat: no-repeat;
     background-position: 5px;
     margin-right: 10px;
     padding-left: 40px;
     border: none;
+}
+
+.form button {
+    max-height: 80px;
 }

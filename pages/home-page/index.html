@@ -22,7 +22,7 @@
           </svg>
         </label> 
         <ul class="nav-list">
-            <li class="logo-circle"> 
+            <li class="logo-cicle"> 
                  <img src="/project-assets-20250305T200804Z-001/project-assets/logos/circle.svg"/>           
             </li>
             <li>
@@ -41,63 +41,67 @@
         
     </nav>
    <section id="hero-section">
-        <div class="container-info">
-            <h1>Empower Your Business With Stunning Desing!</h1> 
-            <p> Circle is a digital desing and development studio. We desing and develop astonishing websites and mobile apps.</p>
-        </div>   
-        <div class="button-mobile">
-            <button>Get in Touch</button>
-            <button class="white"> See our work</button> 
-        </div>
-        <div class="container-image">
-            <img class="hero-image" src="/project-assets-20250305T200804Z-001/project-assets/hero-section/hero-image.png">
-            <img class="card-1" src ="/project-assets-20250305T200804Z-001/project-assets/hero-section/card-1.png">
-            <img class="card-2" src="/project-assets-20250305T200804Z-001/project-assets/hero-section/card-2.png"> 
+        <div class="container-hero">
+            <div class="info">
+                <h1>Empower Your Business With Stunning Desing!</h1> 
+                <p> Circle is a digital desing and development studio. We desing and develop astonishing websites and mobile apps.</p>
+                <div class="button-mobile">
+                    <button>Get in Touch</button>
+                    <button class="white"> See our work</button> 
+                </div>
+            </div>           
+            <div class="image-hero">
+                <img class="hero" src="/project-assets-20250305T200804Z-001/project-assets/hero-section/hero-image.png">
+                <img class="card-1" src ="/project-assets-20250305T200804Z-001/project-assets/hero-section/card-1.png">
+                <img class="card-2" src="/project-assets-20250305T200804Z-001/project-assets/hero-section/card-2.png"> 
+            </div>
         </div>
     </section>
    <section id="clients-section">
-        <div class="client"><img src="/project-assets-20250305T200804Z-001/project-assets/logos/airbnb-logo.svg"></div>
-        <div class="client"><img src="/project-assets-20250305T200804Z-001/project-assets/logos/google-logo.svg"></div>
-        <div class="client"><img src="/project-assets-20250305T200804Z-001/project-assets/logos/microsoft-logo.svg"></div>
-        <div class="client"><img src="/project-assets-20250305T200804Z-001/project-assets/logos/fedex-logo.svg"></div>
-        <div class="client"><img src="/project-assets-20250305T200804Z-001/project-assets/logos/amazon-logo.svg"></div>
-    </section>
+        <div class="container-clients">
+            <div class="client"><img src="/project-assets-20250305T200804Z-001/project-assets/logos/airbnb-logo.svg"></div>
+            <div class="client"><img src="/project-assets-20250305T200804Z-001/project-assets/logos/google-logo.svg"></div>
+            <div class="client"><img src="/project-assets-20250305T200804Z-001/project-assets/logos/microsoft-logo.svg"></div>
+            <div class="client"><img src="/project-assets-20250305T200804Z-001/project-assets/logos/fedex-logo.svg"></div>
+            <div class="client"><img src="/project-assets-20250305T200804Z-001/project-assets/logos/amazon-logo.svg"></div>   
+        </div>
+   </section>
    <section id="project-section">
-    <div class="container-project">
-        <h3>Recent Projects</h3>
-        <div class="projects">
-            <div class="element">
-                <img src="/project-assets-20250305T200804Z-001/project-assets/projects-section/1.jpg">
-                <div class="text">
-                    <div>
-                        <h4>Simplify</h4><br>
-                        <p>UI Desing & App Development</p>
-                    </div>
-                    <a>Learn More</a>
-                </div>    
-            </div>
-            <div class="element">
-                <img src="/project-assets-20250305T200804Z-001/project-assets/projects-section/2.jpg">
-                <div class="text"> 
-                    <div>
-                        <h4>Dashcoin</h4><br>
-                        <p> Web Development</p>
-                    </div>
-                    <a>Learn More</a>
+        <div class="container-project">
+            <h3>Recent Projects</h3> 
+            <div class="projects">
+                <div class="element">
+                    <img src="/project-assets-20250305T200804Z-001/project-assets/projects-section/1.jpg">
+                    <div class="text">
+                        <div>
+                            <h4>Simplify</h4><br>
+                            <p>UI Desing & App Development</p>
+                        </div>
+                        <a>Learn More</a>
+                    </div>    
                 </div>
-            </div>
-            <div class="element">
-                <img src="/project-assets-20250305T200804Z-001/project-assets/projects-section/3.jpg">
-                <div class="text">
-                    <div>
-                        <h4>Vectorify</h4><br>
-                        <p> User Experience Desing</p>
+                <div class="element">
+                    <img src="/project-assets-20250305T200804Z-001/project-assets/projects-section/2.jpg">
+                    <div class="text"> 
+                        <div>
+                            <h4>Dashcoin</h4><br>
+                            <p> Web Development</p>
+                        </div>
+                        <a>Learn More</a>
                     </div>
-                    <a>Learn More</a>
+                </div>
+                <div class="element">
+                    <img src="/project-assets-20250305T200804Z-001/project-assets/projects-section/3.jpg">
+                    <div class="text">
+                        <div>
+                            <h4>Vectorify</h4><br>
+                            <p> User Experience Desing</p>
+                        </div>
+                        <a>Learn More</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
    </section>
    <section id="testimonial-section">
         <div class="memojis-1">
@@ -158,11 +162,11 @@
         <div class="container-CTA">
             <h3>Do you have any questions?</h3><br>
             <p>Let us help you!</p>
+            <form class="form" action="/some-url" method="post">
+                <input type="email" id="email" value="Enter your email">
+                <button>Subscribe</button>
+            </form>
         </div>
-        <form class="form" action="/some-url" method="post">
-            <input type="email" id="email" value="Enter your email">
-            <button>Subscribe</button>
-        </form>
     </section>
    <footer id="footer-section">
         <div class="container-direcction">
