@@ -151,7 +151,7 @@ body {
     height: 444px;
     background-color: white;
     margin: 0 40px 0 0;
-    filter: drop-shadow(5px 5px 5px rgba(7, 42, 200, 0.5));
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
 }
 
 .element:last-child {
@@ -175,25 +175,29 @@ body {
 /*TESTIMONIO*/
 
 #testimonial-section {
-    max-width: 1320px;
-    background-color: var(--dark);
-    height: 622px;
     margin-top: 4rem;
-    padding: 2rem;
+    padding: 2em;
     display: flex;
     justify-content: center;
+}
+
+.container-testimonial {
+    max-width: 1320px;
+    height: 622px;
+    background-color: var(--dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    padding: 2em;
 }
 
-@media (max-width: 599px) {
-    .memojis-1 {
-        display: none;
-    }
-
-    .memojis-2 {
+@media (max-width: 600px) {
+    .memoji {
         display: none;
     }
 }
+
 
 .container-opinion {
     max-width: 621px;
@@ -202,6 +206,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    padding: 2em;
 }
 
 .container-opinion h3 {
@@ -267,7 +272,7 @@ body {
     overflow-x: scroll;
     flex-direction: row;
     flex-wrap: nowrap;
-    padding-top: 3em;
+    padding: 3em 0 3em 0;
 }
 
 .service-card {
@@ -280,7 +285,7 @@ body {
     justify-content: space-around;
     background-color: white;
     padding: 2.5em;
-    filter: drop-shadow(5px 5px 5px rgba(7, 42, 200, 0.5));
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
 
 }
 
@@ -302,18 +307,21 @@ body {
 /*PREGUNTAS*/
 #CTA-section {
     margin-top: 4rem;
-    padding: 2rem;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.CTA {
     background-color: var(--yellow);
-    max-width: 1320px;
+    width: 1320px;
     height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .container-CTA {
-    max-width: 1100px;
     height: 227px;
     display: flex;
     flex-direction: column;
@@ -357,6 +365,20 @@ body {
     .container-hero {
         flex-direction: row;
     }
+
+    .memoji {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 150px;
+    }
+
+    .emoji {
+        width: 150px;
+        height: 150px;
+    }
+
 }
 
 /*DESKTOP*/
@@ -386,5 +408,31 @@ body {
 
     .card-2 {
         max-width: 190px;
+    }
+
+    .memoji {
+        width: 1185px;
+        height: 150px;
+    }
+
+    .container-opinion {
+        padding: 0;
+    }
+
+    .opinion div p, a {
+        font-size: 15px;
+    }
+
+    .form input {
+        width: 393px;
+        height: 80px;
+        background-position: 20px;
+        padding-left: 60px;
+
+    }
+
+    .form button {
+        width: 198px;
+        height: 80px;
     }
 }
