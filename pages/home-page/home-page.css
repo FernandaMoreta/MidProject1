@@ -170,16 +170,8 @@
 
 }
 
-.link-simplify a {
-    list-style: none;
-    color: var(--dark);
+.text a {
     text-decoration: none;
-    font-size: 2.4em;
-    font-weight: bold;
-}
-
-.link-simplify p {
-    padding-top: 0.71em;
 }
 
 /*TESTIMONIO*/
