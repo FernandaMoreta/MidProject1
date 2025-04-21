@@ -1,58 +1,72 @@
-body {
-    background-color: var(--light);
-    width: 100vw;
+/*FORMULARIO*/
+#contact-form {
+    margin-top: 4rem;
+    padding: 0 2em 0 2em;
+    display: flex;
+    justify-content: center;
+
 }
 
-#contact-form {
+form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 1100px;
 }
 
 .container-form {
-    max-width: 1100px;
-    padding: 2rem;
+    margin-top: 4em;
+}
+
+.form-label {
+    font-size: 1.7em;
+
+}
+
+input {
+    border: none;
+    background-color: rgb(107, 112, 141, 20%);
+    margin-top: 1.5em;
+    padding-left: 15px;
+
+    &::placeholder {
+        color: var(--medium);
+    }
+}
+
+.form-name input {
+    height: 70px;
+    width: 100%;
+
+}
+
+.form-group {
     display: flex;
     flex-direction: column;
+
 }
 
-.container-form label {
-    margin-top: 1.5em;
+.form-group div {
+    padding-top: 1em;
 }
 
-.field {
-    min-width: 100%;
-    max-width: 1100px;
-    min-height: 50px;
-    max-height: 70px;
-    border: none;
-    background-color: rgb(107, 112, 141, 20%);
+.form-group input {
+    width: 100%;
+    height: 70px;
 
-    &::placeholder {
-        color: var(--medium);
-        padding: 15px;
-    }
 }
 
-.field-message {
-    min-width: 350px;
-    max-width: 1100px;
-    min-height: 50px;
-    max-height: 240px;
-    border: none;
-    background-color: rgb(107, 112, 141, 20%);
+.form-message {
+    padding-top: 1em;
 
-    &::placeholder {
-        color: var(--medium);
-        padding: 15px;
-    }
+}
+
+.form-message input {
+    width: 100%;
+    height: 200px;
 }
 
 .submit {
-    min-width: 350px;
-    max-width: 1100px;
-    min-height: 50px;
+    width: 100%;
     height: 70px;
     border: none;
     background-color: var(--primary);
@@ -60,5 +74,13 @@ body {
     margin-top: 2em;
 }
 
-/*TABLET VERSIÓN*/
-/*DESKTOP*/
+@media (min-width: 1000px) {
+    .form-group {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .field {
+        width: 530px;
+    }
+}

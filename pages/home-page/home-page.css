@@ -1,8 +1,3 @@
-body {
-    background-color: var(--light);
-    width: 100vw;
-}
-
 /*HEADER*/
 #hero-section {
     margin-top: 4rem;
@@ -66,6 +61,8 @@ body {
     position: absolute;
     left: 0;
     top: 0;
+    background-color: transparent;
+
 }
 
 .card-2 {
@@ -73,6 +70,7 @@ body {
     position: absolute;
     right: 0;
     bottom: 0;
+    background-color: transparent;
 }
 
 @media (min-width: 599px) and (max-width: 800px) {
@@ -88,7 +86,7 @@ body {
 /*CLIENTES*/
 #clients-section {
     margin-top: 4rem;
-    padding: 2em;
+    padding: 0 2em 0 2em;
     display: flex;
     justify-content: center;
 
@@ -125,7 +123,7 @@ body {
 
 #project-section {
     margin-top: 4rem;
-    padding: 2em;
+    padding: 0 2em 0 2em;
     display: flex;
     justify-content: center;
 }
@@ -172,11 +170,23 @@ body {
 
 }
 
+.link-simplify a {
+    list-style: none;
+    color: var(--dark);
+    text-decoration: none;
+    font-size: 2.4em;
+    font-weight: bold;
+}
+
+.link-simplify p {
+    padding-top: 0.71em;
+}
+
 /*TESTIMONIO*/
 
 #testimonial-section {
     margin-top: 4rem;
-    padding: 2em;
+    padding: 0 2em 0 2em;
     display: flex;
     justify-content: center;
 }
@@ -255,7 +265,7 @@ body {
 
 #service-section {
     margin-top: 4rem;
-    padding: 2em;
+    padding: 0 2em 0 2em;
     display: flex;
     justify-content: center;
 }
@@ -307,7 +317,7 @@ body {
 /*PREGUNTAS*/
 #CTA-section {
     margin-top: 4rem;
-    padding: 2em;
+    padding: 0 2em 0 2em;
     display: flex;
     justify-content: center;
 }
@@ -345,7 +355,6 @@ body {
 }
 
 .form input {
-    max-width: 393px;
     max-height: 80px;
     background-image: url(/project-assets-20250305T200804Z-001/project-assets/newsletter/icon/mail.svg);
     background-repeat: no-repeat;
@@ -419,9 +428,6 @@ body {
         padding: 0;
     }
 
-    .opinion div p, a {
-        font-size: 15px;
-    }
 
     .form input {
         width: 393px;

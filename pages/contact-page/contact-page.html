@@ -3,82 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="../main.css"/>
     <link rel="stylesheet" href="./contact-page.css"/>
  
 </head>
 <body>
-    <nav>
-        <input type="checkbox" name="" id="nav-ham" class="nav-ham"/>
-        <label for="nav-ham"class="nav-label">
-         <!--svg sirve para dar calidad a elementos como un formato -->   
-          <svg class="menu" viewBox="0 0 448 512" width="100" title="bars">
-            <path
-              d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
-          </svg>       
-          <svg class="close" viewBox="0 0 384 512" width="100" title="times">
-            <path
-              d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" />
-          </svg>
-        </label> 
-        <ul class="nav-list">
-            <li class="logo-circle"> 
-                 <img src="/project-assets-20250305T200804Z-001/project-assets/logos/circle.svg"/>           
-            </li>
-            <li>
-                <a class= "link-nav" href="./index.html" title="Home">Home</a>
-            </li>
-            <li>
-                <a class= "link-nav" href="./pages/project-page/project-page.html" title="">Projects</a>
-            </li>
-            <li>
-                <a class= "link-nav" href="./pages/contact-page/contact-page.html">Services</a>       
-            </li>
-            <li>
-             <button>Contact Us</button>   
-            </li>
-        </ul>
-    </nav>
-   <form id="contact-form">
-        <div class="container-form">
+    <header id="header-section">
+        <nav>
+            <input type="checkbox" name="" id="nav-ham" class="nav-ham"/>
+            <label for="nav-ham"class="nav-label">
+             <!--svg sirve para dar calidad a elementos como un formato -->   
+              <svg class="menu" viewBox="0 0 448 512" width="100" title="bars">
+                <path
+                  d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
+              </svg>       
+              <svg class="close" viewBox="0 0 384 512" width="100" title="times">
+                <path
+                  d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" />
+              </svg>
+            </label> 
+            <ul class="nav-list">
+                <li>
+                    <img class="logo" src="/project-assets-20250305T200804Z-001/project-assets/logos/circle.svg" alt="logo" >
+                </li>
+                <li>
+                    <a class= "link-nav" href="./home-page.html">Home</a>
+                </li>
+                <li>
+                    <a class= "link-nav" href="#project-section">Projects</a>
+                </li>
+                <li>
+                    <a class= "link-nav" href="#service-section">Services</a>       
+                </li>
+                <li>
+                 <a href="../contact-page/contact-page.html" target="_blank">
+                    <button>Contact Us</button>   
+                 </a>  
+                </li>
+            </ul>   
+        </nav>
+        <div class="container-desktop-nav">
+            <img class="logo" src="/project-assets-20250305T200804Z-001/project-assets/logos/circle.svg">
+            <ul class="nav-list-desktop">
+                <li>
+                    <a class= "link-nav" href="./home-page.html">Home</a>
+                </li>
+                <li>
+                    <a class= "link-nav" href="#project-section">Projects</a>
+                </li>
+                <li>
+                    <a class= "link-nav" href="#service-section">Services</a>       
+                </li>
+            </ul>  
+            <a href="../contact-page/contact-page.html" target="_blank">
+                <button class="button-desktop" href="../contact-page/contact-page.html">Contact Us</button>    
+            </a>
+        </div>
+    </header>
+    <section id="contact-form">
+        <form class="form">
             <h1>Contact Us</h1>
-            <p>
-                <label>Full Name*</label><br>
-                <input type="text" placeholder="Enter your full name" class="field">
-            </p>
-            <p>
-                <label>Email</label><br>
-                <input type="email" placeholder="Enter your email address" class="field">
-
-            </p>           
-            <p>
-                <label>Phone</label><br>
-                <input type="number" placeholder="Enter your phone number" class="field"> 
-            </p>           
-            <p>
-                <label>Message</label><br>
-                <textarea type="text" placeholder="Write your message here..." class="field-message"row="5"></textarea><br>
-            </p>           
-            <input type="submit" value="Submit" class="submit"> 
-        </div>    
-    </form>
+            <div class="container-form">
+                <div class="form-name">
+                    <label class="form-label">Full Name*</label>
+                    <input type="text" placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <div class="field">
+                        <label class="form-label">Email</label>
+                        <input type="email" placeholder="Enter your email address">
+                    </div>
+                    <div class="field">
+                        <label class="form-label">Phone</label>
+                        <input type="number" placeholder="Enter your phone number"> 
+                    </div>                           
+                </div>                          
+                <div class="form-message">
+                    <label class="form-label">Message</label>
+                    <input type="text" placeholder="Write your message here..." class="message">
+                </div>           
+                <input type="submit" value="Submit" class="submit"> 
+            </div>    
+        </form>
+    </section>
     <footer id="footer-section">
-        <div class="container-direcction">
-            <img src="/project-assets-20250305T200804Z-001/project-assets/logos/circle.svg">
-            <p>2972 Westheimer Rd. Santa Ana,</p>
-            <p>Illinois 85486</p>  
+        <div class="container-footer">
+            <div class="container-direcction">
+                <img class="logo" src="/project-assets-20250305T200804Z-001/project-assets/logos/circle.svg">
+                <div>
+                    <p>2972 Westheimer Rd. Santa Ana,</p>
+                    <p>Illinois 85486</p>  
+                </div>
+            </div>
+            <div class="container-list">
+                <div>
+                    <a>Team</a><br>
+                    <a>Press</a>
+                </div>
+                <div>
+                    <a>Services</a><br>
+                    <a>Projects</a>
+                </div>
+                <div>
+                    <a>About Us</a><br>
+                    <a>Privacy</a>
+                </div>     
+            </div>
         </div>
-        <div class="container-list">
-        <ul>
-            <li>Team</li>
-            <li>Press</li>
-            <li>Services</li>
-            <li>Projects</li>
-            <li>About Us</li>
-            <li>Privacy</li>
-        </ul>
-        </div>
-    </footer> 
+    </footer>
 </body>
 </html>

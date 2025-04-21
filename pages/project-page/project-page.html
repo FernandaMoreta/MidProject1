@@ -3,43 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Simplify</title>
     <link rel="stylesheet" href="../main.css"/>
     <link rel="stylesheet" href="/pages/project-page/project-page.css">
         
 </head>
 <body>
-    <nav id="nav-bar">
-        <input type="checkbox" name="" id="nav-ham" class="nav-ham"/>
-        <label for="nav-ham"class="nav-label">
-         <!--svg sirve para dar calidad a elementos como un formato -->   
-          <svg class="menu" viewBox="0 0 448 512" width="100" title="bars">
-            <path
-              d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
-          </svg>       
-          <svg class="close" viewBox="0 0 384 512" width="100" title="times">
-            <path
-              d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" />
-          </svg>
-        </label> 
-        <ul class="nav-list">
-            <li class="logo-circle"> 
-                 <img src="/project-assets-20250305T200804Z-001/project-assets/logos/circle.svg"/>           
-            </li>
-            <li>
-                <a class= "link-nav" href="./index.html">Home</a>
-            </li>
-            <li>
-                <a class= "link-nav" href="./pages/project-page/project-page.html">Projects</a>
-            </li>
-            <li>
-                <a class= "link-nav" href="./pages/contact-page/contact-page.html">Services</a>       
-            </li>
-            <li>
-             <button>Contact Us</button>   
-            </li>
-        </ul>
-    </nav>
+    <header id="header-section">
+        <nav>
+            <input type="checkbox" name="" id="nav-ham" class="nav-ham"/>
+            <label for="nav-ham"class="nav-label">
+             <!--svg sirve para dar calidad a elementos como un formato -->   
+              <svg class="menu" viewBox="0 0 448 512" width="100" title="bars">
+                <path
+                  d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
+              </svg>       
+              <svg class="close" viewBox="0 0 384 512" width="100" title="times">
+                <path
+                  d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" />
+              </svg>
+            </label> 
+            <ul class="nav-list">
+                <li>
+                    <img class="logo" src="/project-assets-20250305T200804Z-001/project-assets/logos/circle.svg" alt="logo" >
+                </li>
+                <li>
+                    <a class= "link-nav" href="./home-page.html">Home</a>
+                </li>
+                <li>
+                    <a class= "link-nav" href="#project-section">Projects</a>
+                </li>
+                <li>
+                    <a class= "link-nav" href="#service-section">Services</a>       
+                </li>
+                <li>
+                 <a href="../contact-page/contact-page.html" target="_blank">
+                    <button>Contact Us</button>   
+                 </a>  
+                </li>
+            </ul>   
+        </nav>
+        <div class="container-desktop-nav">
+            <img class="logo" src="/project-assets-20250305T200804Z-001/project-assets/logos/circle.svg">
+            <ul class="nav-list-desktop">
+                <li>
+                    <a class= "link-nav" href="./home-page.html">Home</a>
+                </li>
+                <li>
+                    <a class= "link-nav" href="#project-section">Projects</a>
+                </li>
+                <li>
+                    <a class= "link-nav" href="#service-section">Services</a>       
+                </li>
+            </ul>  
+            <a href="../contact-page/contact-page.html" target="_blank">
+                <button class="button-desktop" href="../contact-page/contact-page.html">Contact Us</button>    
+            </a>
+        </div>
+    </header>
     <section id="simplify-section">
         <div class="container-simplify">
             <h1>Simplify</h1>
@@ -49,10 +70,9 @@
             </div>
             <img src="/project-assets-20250305T200804Z-001/project-assets/projects-section/1.jpg">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias exercitationem repellendus maxime minus dolore in expedita odio? Sequi beatae laudantium nesciunt totam delectus dignissimos unde minima dolores nam repellendus voluptatem quaerat ea optio ipsam, libero ducimus? Dolorum corporis assumenda doloribus inventore magnam libero beatae quisquam repudiandae enim, voluptates ab cumque officiis suscipit molestias.</p><br><p>Voluptatem delectus aspernatur praesentium, id, libero porro earum iste expedita dolores dolor dolorem. Cupiditate quis aliquid tempora omnis reiciendis? Voluptatum beatae et fugiat architecto, eum maxime. Beatae architecto quod, error, aperiam labore natus soluta eaque voluptatum ipsum pariatur harum hic odit fugit assumenda eos possimus minima dicta totam culpa. Asperiores veniam impedit consequatur odit voluptates laboriosam illum vel vero totam quidem quibusdam rem, cum itaque porro cupiditate dolorum numquam distinctio animi, eos incidunt a labore temporibus. Expedita totam ea vitae saepe incidunt aperiam, laborum repellat sed nihil molestias deleniti delectus alias unde animi magnam labore quidem. Eius!</p>
- </div>
-     </div>
+        </div>
     </section>
-    <section id="project-section">
+    <section id="other-project-section">
         <div class="container-project">
             <h3>Other Projects</h3>
             <div class="projects">
@@ -89,32 +109,42 @@
             </div>
         </div>
        </section>
-       <section id="CTA-section">
-        <div class="container-CTA">
-            <h3>Do you have any questions?</h3><br>
-            <p>Let us help you!</p>
-            <form class="form" action="/some-url" method="post">
-                <input type="email" id="email" value="Enter your email">
-                <button>Subscribe</button>
-            </form>
+    <section id="CTA-section">
+        <div class="CTA">
+             <div class="container-CTA">
+                <h3>Do you have any questions?</h3><br>
+                <p>Let us help you!</p>
+                <form class="form" action="/some-url" method="post">
+                    <input type="email" id="email" value="Enter your email">
+                    <button>Subscribe</button>
+                </form>
+             </div>  
         </div>
     </section>
     <footer id="footer-section">
-        <div class="container-direcction">
-            <img src="/project-assets-20250305T200804Z-001/project-assets/logos/circle.svg">
-            <p>2972 Westheimer Rd. Santa Ana,</p>
-            <p>Illinois 85486</p>  
+        <div class="container-footer">
+            <div class="container-direcction">
+                <img class="logo" src="/project-assets-20250305T200804Z-001/project-assets/logos/circle.svg">
+                <div>
+                    <p>2972 Westheimer Rd. Santa Ana,</p>
+                    <p>Illinois 85486</p>  
+                </div>
+            </div>
+            <div class="container-list">
+                <div>
+                    <a>Team</a><br>
+                    <a>Press</a>
+                </div>
+                <div>
+                    <a>Services</a><br>
+                    <a>Projects</a>
+                </div>
+                <div>
+                    <a>About Us</a><br>
+                    <a>Privacy</a>
+                </div>     
+            </div>
         </div>
-        <div class="container-list">
-        <ul>
-            <li>Team</li>
-            <li>Press</li>
-            <li>Services</li>
-            <li>Projects</li>
-            <li>About Us</li>
-            <li>Privacy</li>
-        </ul>
-        </div>
-    </footer> 
+    </footer>
 </body>
 </html>

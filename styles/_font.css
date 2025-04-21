@@ -1,12 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--medium);
-}
-
-button {
-    background-color: #072ac8;
-    color: white;
-    font-size: 1.5em;
+    font-size: 10px;
 }
 
 ul {
@@ -14,7 +9,7 @@ ul {
 }
 
 h1 {
-    font-size: 4.5em;
+    font-size: 6em;
     font-weight: bold;
     color: var(--dark);
 }
@@ -25,7 +20,7 @@ h2 {
 }
 
 h3 {
-    font-size: 3em;
+    font-size: 4em;
     font-weight: bold;
     color: var(--dark);
 }
@@ -45,17 +40,4 @@ a {
 p {
     font-size: 1.5em;
     color: var(--medium);
-}
-
-@media (max-width: 720px) {
-    body {
-        font-size: 10px;
-    }
-}
-
-
-@media (min-width:721px) {
-    body {
-        font-size: 12px;
-    }
 }
