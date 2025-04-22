@@ -1,4 +1,4 @@
-[def]: ironlogo.png
+![Texto alternativo](ironlogo.png)
 
 MID PROJECT 1
 
