@@ -1,4 +1,4 @@
-![Texto alternativo](ironlogo.png)
+![IRONHACK](Ironlogo.png)
 
 MID PROJECT 1
 
